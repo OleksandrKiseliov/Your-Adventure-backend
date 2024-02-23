@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "BussinessObject/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "DataAccess": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BussinessObject.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BussinessObject.dll": {}
-        }
-      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -28,11 +15,6 @@
     }
   },
   "libraries": {
-    "BussinessObject/1.0.0": {
-      "type": "project",
-      "path": "../BussinessObject/BussinessObject.csproj",
-      "msbuildProject": "../BussinessObject/BussinessObject.csproj"
-    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -41,7 +23,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BussinessObject >= 1.0.0"
+      "DataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -76,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\join\\Your adventure2\\BussinessObject\\BussinessObject.csproj": {
-              "projectPath": "D:\\join\\Your adventure2\\BussinessObject\\BussinessObject.csproj"
+            "D:\\join\\Your adventure2\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\join\\Your adventure2\\DataAccess\\DataAccess.csproj"
             }
           }
         }

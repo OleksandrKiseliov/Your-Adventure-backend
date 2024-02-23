@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\join\\Your adventure2\\Your adventure2\\Your adventure2.csproj": {}
+    "D:\\join\\Your adventure2\\Your adventure2\\Your Adventure.csproj": {}
   },
   "projects": {
     "D:\\join\\Your adventure2\\Businesslogic\\Businesslogic.csproj": {
@@ -126,12 +126,12 @@
         }
       }
     },
-    "D:\\join\\Your adventure2\\Your adventure2\\Your adventure2.csproj": {
+    "D:\\join\\Your adventure2\\Your adventure2\\Your Adventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\join\\Your adventure2\\Your adventure2\\Your adventure2.csproj",
-        "projectName": "Your adventure2",
-        "projectPath": "D:\\join\\Your adventure2\\Your adventure2\\Your adventure2.csproj",
+        "projectUniqueName": "D:\\join\\Your adventure2\\Your adventure2\\Your Adventure.csproj",
+        "projectName": "Your Adventure",
+        "projectPath": "D:\\join\\Your adventure2\\Your adventure2\\Your Adventure.csproj",
         "packagesPath": "C:\\Users\\sport\\.nuget\\packages\\",
         "outputPath": "D:\\join\\Your adventure2\\Your adventure2\\obj\\",
         "projectStyle": "PackageReference",

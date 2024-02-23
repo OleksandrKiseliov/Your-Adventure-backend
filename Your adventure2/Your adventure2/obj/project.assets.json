@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Businesslogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Businesslogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Businesslogic.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Businesslogic/1.0.0": {
+      "type": "project",
+      "path": "../Businesslogic/Businesslogic.csproj",
+      "msbuildProject": "../Businesslogic/Businesslogic.csproj"
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Businesslogic >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\sport\\.nuget\\packages\\": {},
@@ -14,9 +51,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\join\\Your adventure2\\Your adventure2\\Your adventure2.csproj",
-      "projectName": "Your adventure2",
-      "projectPath": "D:\\join\\Your adventure2\\Your adventure2\\Your adventure2.csproj",
+      "projectUniqueName": "D:\\join\\Your adventure2\\Your adventure2\\Your Adventure.csproj",
+      "projectName": "Your Adventure",
+      "projectPath": "D:\\join\\Your adventure2\\Your adventure2\\Your Adventure.csproj",
       "packagesPath": "C:\\Users\\sport\\.nuget\\packages\\",
       "outputPath": "D:\\join\\Your adventure2\\Your adventure2\\obj\\",
       "projectStyle": "PackageReference",
@@ -39,7 +76,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\join\\Your adventure2\\Businesslogic\\Businesslogic.csproj": {
+              "projectPath": "D:\\join\\Your adventure2\\Businesslogic\\Businesslogic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
