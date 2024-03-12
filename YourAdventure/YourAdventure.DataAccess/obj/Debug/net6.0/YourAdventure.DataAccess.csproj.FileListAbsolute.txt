@@ -1,0 +1,12 @@
+D:\join\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.deps.json
+D:\join\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.dll
+D:\join\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.pdb
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.csproj.AssemblyReference.cache
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.AssemblyInfoInputs.cache
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.AssemblyInfo.cs
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.csproj.CoreCompileInputs.cache
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.dll
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\refint\YourAdventure.DataAccess.dll
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.pdb
+D:\join\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\ref\YourAdventure.DataAccess.dll

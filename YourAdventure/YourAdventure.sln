@@ -5,6 +5,10 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourAdventure", "YourAdventure\YourAdventure.csproj", "{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourAdventure.BusinessLogic", "YourAdventure.BusinessLogic\YourAdventure.BusinessLogic.csproj", "{C179A093-09A8-42E4-BC27-A484E7BF5326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourAdventure.DataAccess", "YourAdventure.DataAccess\YourAdventure.DataAccess.csproj", "{5CF1154A-BC0E-4909-9F53-5C06E41452C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C179A093-09A8-42E4-BC27-A484E7BF5326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C179A093-09A8-42E4-BC27-A484E7BF5326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C179A093-09A8-42E4-BC27-A484E7BF5326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C179A093-09A8-42E4-BC27-A484E7BF5326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF1154A-BC0E-4909-9F53-5C06E41452C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF1154A-BC0E-4909-9F53-5C06E41452C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF1154A-BC0E-4909-9F53-5C06E41452C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF1154A-BC0E-4909-9F53-5C06E41452C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
