@@ -21,8 +21,4 @@
     <ProjectReference Include="..\YourAdventure.BusinessLogic\YourAdventure.BusinessLogic.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
