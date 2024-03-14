@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Your-Adventure-backend\\YourAdventure\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|d:\\your-adventure-backend\\youradventure\\youradventure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|solutionrelative:youradventure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|d:\\your-adventure-backend\\youradventure\\youradventure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|solutionrelative:youradventure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|d:\\your-adventure-backend\\youradventure\\youradventure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|solutionrelative:youradventure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|d:\\your-adventure-backend\\youradventure\\youradventure\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|solutionrelative:youradventure\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|d:\\your-adventure-backend\\youradventure\\youradventure\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|solutionrelative:youradventure\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE04DE69-FDBF-443D-B5F3-5E436F7F8A88}|YourAdventure\\YourAdventure.csproj|d:\\your-adventure-backend\\youradventure\\youradventure\\controllers\\interfacelanguagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,32 +38,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\Token.cs",
+              "RelativeDocumentMoniker": "YourAdventure\\Token.cs",
+              "ToolTip": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\Token.cs",
+              "RelativeToolTip": "YourAdventure\\Token.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T18:04:19.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "YourAdventure\\WeatherForecast.cs",
+              "ToolTip": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\WeatherForecast.cs",
+              "RelativeToolTip": "YourAdventure\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T18:04:17.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\Program.cs",
               "RelativeDocumentMoniker": "YourAdventure\\Program.cs",
               "ToolTip": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\Program.cs",
               "RelativeToolTip": "YourAdventure\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABIAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T15:45:40.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\appsettings.json",
               "RelativeDocumentMoniker": "YourAdventure\\appsettings.json",
               "ToolTip": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\appsettings.json",
               "RelativeToolTip": "YourAdventure\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAB9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-14T15:45:14.03Z"
+              "WhenOpened": "2024-03-14T15:45:14.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "InterfaceLanguagesController.cs",
               "DocumentMoniker": "D:\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\Controllers\\InterfaceLanguagesController.cs",
               "RelativeDocumentMoniker": "YourAdventure\\Controllers\\InterfaceLanguagesController.cs",
