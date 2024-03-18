@@ -1,125 +1,62 @@
-﻿using CurdOperationWithDapperNetCoreMVC_Demo.Models;
-using CurdOperationWithDapperNetCoreMVC_Demo.Repositories;
+﻿using Dapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
-namespace CurdOperationWithDapperNetCoreMVC_Demo.Controllers
+namespace YourAdventure.Controllers
 {
-    public class PersonsController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PersonController : ControllerBase
     {
-        private readonly IPerson personRepository;
-
-        public PersonsController(IPerson personRepository)
+        private readonly IConfiguration _config;
+        public PersonController(IConfiguration config)
         {
-            this.personRepository = personRepository;
+            _config = config;
         }
 
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<ActionResult<List<Person>>> GetAllPersons()
         {
-            var persons = await personRepository.Get();
-            return View(persons);
+            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            var persons = await connection.QueryAsync<Person>("select * from person");
+            return Ok(persons);
         }
 
-        public async Task<IActionResult> Details(Guid id)
+        [HttpGet("{personId}")]
+        public async Task<ActionResult<Person>> GetPerson(int personId)
         {
-            if (id == Guid.Empty)
-            {
-                return NotFound();
-            }
-
-            var person = await personRepository.Find(id);
-
-            if (person == null)
-            {
-                return NotFound();
-            }
-
-            return View(person);
-        }
-
-        public IActionResult Create()
-        {
-            return View();
+            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            var person = await connection.QueryFirstAsync<Person>("select * from person where PersonId = @id",
+                new { id = personId });
+            return Ok(person);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(PersonModel model)
+        public async Task<ActionResult<Person>> NewPerson(Person person)
         {
-            if (ModelState.IsValid)
-            {
-                await personRepository.Add(model);
-                return RedirectToAction(nameof(Index));
-            }
-
-            return View();
+            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            await connection.ExecuteAsync("insert into Person (Nickname, Bday, Email, Profilepicture, Password)" +
+                " values (@Nickname, @Bday, @Email, @Profilepicture, @Password)", person);
+            return Ok(await GetAllPersons());
         }
 
-        public async Task<IActionResult> Edit(Guid id)
+        [HttpPut]
+        public async Task<ActionResult<List<Person>>> UpdatePerson(Person person)
         {
-            if (id == Guid.Empty)
-            {
-                return NotFound();
-            }
-
-            var person = await personRepository.Find(id);
-
-            if (person == null)
-            {
-                return NotFound();
-            }
-
-            return View(person);
+            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            await connection.ExecuteAsync("update Person set Nickname = @Nickname, Bday = @Bday, Email = @Email, Profilepicture = @Profilepicture, Password = @Password where PersonId = @PersonId", person);
+            return Ok(person);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, PersonModel model)
+        [HttpDelete("{PersonId}")]
+        public async Task<ActionResult<List<Person>>> DeletePerson(int PersonId)
         {
-            if (id != model.PersonId)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                await personRepository.Update(model);
-                return RedirectToAction(nameof(Index));
-            }
-
-            return View(model);
+            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
+            await connection.ExecuteAsync("delete from Person where PersonId = @id", new { id = PersonId });
+            return Ok(await GetAllPersons());
         }
 
-        public async Task<IActionResult> Delete(Guid id)
-        {
-            if (id == Guid.Empty)
-            {
-                return NotFound();
-            }
 
-            var person = await personRepository.Find(id);
-
-            if (person == null)
-            {
-                return NotFound();
-            }
-
-            return View(person);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ConfirmDelete(Guid id)
-        {
-            var person = await personRepository.Find(id);
-            if (person == null)
-            {
-                return NotFound();
-            }
-
-            await personRepository.Remove(person);
-            return RedirectToAction(nameof(Index));
-        }
     }
 }

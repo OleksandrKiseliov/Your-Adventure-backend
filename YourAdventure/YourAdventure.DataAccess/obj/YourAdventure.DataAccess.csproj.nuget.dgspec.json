@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\123\\Desktop\\ya\\нова папка\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {}
+    "D:\\yradv\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\123\\Desktop\\ya\\нова папка\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
+    "D:\\yradv\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\123\\Desktop\\ya\\нова папка\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
+        "projectUniqueName": "D:\\yradv\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
         "projectName": "YourAdventure.DataAccess",
-        "projectPath": "C:\\Users\\123\\Desktop\\ya\\нова папка\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\123\\Desktop\\ya\\нова папка\\YourAdventure\\YourAdventure.DataAccess\\obj\\",
+        "projectPath": "D:\\yradv\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\yradv\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
