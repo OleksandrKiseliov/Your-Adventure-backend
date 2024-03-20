@@ -34,3 +34,15 @@ D:\yradv\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug
 D:\yradv\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\refint\YourAdventure.DataAccess.dll
 D:\yradv\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.pdb
 D:\yradv\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\ref\YourAdventure.DataAccess.dll
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.deps.json
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.dll
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.pdb
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.AssemblyInfoInputs.cache
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.AssemblyInfo.cs
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.csproj.CoreCompileInputs.cache
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.sourcelink.json
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.dll
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\refint\YourAdventure.DataAccess.dll
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.pdb
+D:\join\BackendNew\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\ref\YourAdventure.DataAccess.dll

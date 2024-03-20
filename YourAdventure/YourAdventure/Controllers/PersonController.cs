@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+
 
 namespace YourAdventure.Controllers
 {
@@ -23,13 +25,13 @@ namespace YourAdventure.Controllers
             return Ok(persons);
         }
 
-        [HttpGet("{personId}")]
-        public async Task<ActionResult<Person>> GetPerson(int personId)
+        [HttpGet("{Email}")]
+        public async Task<Person> GetPerson(string Email)
         {
             using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
-            var person = await connection.QueryFirstAsync<Person>("select * from person where PersonId = @id",
-                new { id = personId });
-            return Ok(person);
+            var person = await connection.QueryFirstAsync<Person>("select * from person where Email = @Email",
+                new { Email = Email });
+            return (person);
         }
 
         [HttpPost]

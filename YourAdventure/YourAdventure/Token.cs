@@ -1,62 +1,41 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Security.Cryptography;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using YourAdventure;
+using YourAdventure.BusinessLogic.Services.Interfaces;
+using YourAdventure.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UserController : ControllerBase
+public class UserController : ControllerBase 
 {
     private readonly IConfiguration _configuration;
-
-    public UserController(IConfiguration configuration)
+    private readonly ITokenGenerator _tokenGenerator;
+    
+    public UserController(IConfiguration configuration, ITokenGenerator tokenGenerator)
     {
         _configuration = configuration;
+        _tokenGenerator = tokenGenerator;
     }
 
-    public class LoginModel
-    {
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        // Additional properties as needed
-    }
-    public class TokenOptions
-    {
-        public string Secret { get; set; }
-        public int ExpiryDays { get; set; }
-        // Add any other properties you need for token configuration
-    }
+   
+    
 
     [HttpPost("login")]
-    public IActionResult Login(LoginModel model)
+    public async Task<IActionResult> Login(Person model)
     {
-        if (model.Username == "admin" && model.Password == "password" && model.Email == "email")
+
+        PersonController personController = new PersonController(_configuration);
+        Person person = await personController.GetPerson(model.Email);
+        //var user = _userService.GetUserInfo(model);
+
+        // get user from DB to check if password is valid
+        // if valid - return token
+        // if not - return Authorized
+        if (model.Nickname == person.Nickname && model.Password == person.Password )
         {
-            var tokenOptions = _configuration.GetSection("TokenOptions").Get<TokenOptions>();
+            var token = _tokenGenerator.GenerateToken(model);
+            return Ok(token);
 
-            // Generate a secure 256-bit key
-            var keyBytes = new byte[32];
-            using (var rng = new RNGCryptoServiceProvider())
-            {
-                rng.GetBytes(keyBytes);
-            }
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new[]
-                {
-                    new Claim(ClaimTypes.Name, model.Username)
-                }),
-                Expires = DateTime.UtcNow.AddDays(tokenOptions.ExpiryDays),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(keyBytes), SecurityAlgorithms.HmacSha256Signature)
-            };
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-
-            return Ok(new { token = tokenHandler.WriteToken(token) });
         }
 
         return Unauthorized();
