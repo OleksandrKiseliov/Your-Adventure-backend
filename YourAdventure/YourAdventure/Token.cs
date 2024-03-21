@@ -6,7 +6,7 @@ using YourAdventure.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UserController : ControllerBase 
+public class UserController : ControllerBase
 {
     private readonly IConfiguration _configuration;
     private readonly ITokenGenerator _tokenGenerator;
@@ -18,7 +18,16 @@ public class UserController : ControllerBase
     }
 
    
-    
+    public class TokenOptions
+    {
+        public string Secret { get; set; }
+        public int ExpiryDays { get; set; }
+
+        public string Issuer { get; set; }
+        public string Audience { get; set; }
+
+        // Add any other properties you need for token configuration
+    }
 
     [HttpPost("login")]
     public async Task<IActionResult> Login(Person model)

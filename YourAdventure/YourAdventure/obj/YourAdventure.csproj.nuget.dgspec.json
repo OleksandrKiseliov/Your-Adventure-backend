@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\YourAdventure.csproj": {}
+    "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure\\YourAdventure.csproj": {}
   },
   "projects": {
-    "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj": {
+    "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
+        "projectUniqueName": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
         "projectName": "YourAdventure.BusinessLogic",
-        "projectPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\sport\\.nuget\\packages\\",
-        "outputPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\obj\\",
+        "projectPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sport\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
-                "projectPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj"
+              "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
+                "projectPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj"
               }
             }
           }
@@ -73,21 +68,17 @@
         }
       }
     },
-    "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
+    "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
+        "projectUniqueName": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
         "projectName": "YourAdventure.DataAccess",
-        "projectPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\sport\\.nuget\\packages\\",
-        "outputPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\obj\\",
+        "projectPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sport\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,7 +86,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -138,21 +128,17 @@
         }
       }
     },
-    "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\YourAdventure.csproj": {
+    "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure\\YourAdventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\YourAdventure.csproj",
+        "projectUniqueName": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure\\YourAdventure.csproj",
         "projectName": "YourAdventure",
-        "projectPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\YourAdventure.csproj",
-        "packagesPath": "C:\\Users\\sport\\.nuget\\packages\\",
-        "outputPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure\\obj\\",
+        "projectPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure\\YourAdventure.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sport\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,15 +146,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj": {
-                "projectPath": "D:\\join\\BackendNew\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj"
+              "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj": {
+                "projectPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj"
               }
             }
           }
