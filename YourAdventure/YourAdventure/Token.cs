@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System.Threading.Tasks;
 using YourAdventure;
 using YourAdventure.BusinessLogic.Services.Interfaces;
-using YourAdventure.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -10,41 +10,24 @@ public class UserController : ControllerBase
 {
     private readonly IConfiguration _configuration;
     private readonly ITokenGenerator _tokenGenerator;
-    
-    public UserController(IConfiguration configuration, ITokenGenerator tokenGenerator)
+    private readonly IPersonGenerator _personGenerator;
+
+    public UserController(IConfiguration configuration, ITokenGenerator tokenGenerator, IPersonGenerator personGenerator)
     {
         _configuration = configuration;
         _tokenGenerator = tokenGenerator;
-    }
-
-   
-    public class TokenOptions
-    {
-        public string Secret { get; set; }
-        public int ExpiryDays { get; set; }
-
-        public string Issuer { get; set; }
-        public string Audience { get; set; }
-
-        // Add any other properties you need for token configuration
+        _personGenerator = personGenerator;
     }
 
     [HttpPost("login")]
     public async Task<IActionResult> Login(Person model)
     {
+        var person = await _personGenerator.GetPerson(model.Email);
 
-        PersonController personController = new PersonController(_configuration);
-        Person person = await personController.GetPerson(model.Email);
-        //var user = _userService.GetUserInfo(model);
-
-        // get user from DB to check if password is valid
-        // if valid - return token
-        // if not - return Authorized
-        if (model.Nickname == person.Nickname && model.Password == person.Password )
+        if (person != null && model.Nickname == person.Nickname && model.Password == person.Password)
         {
             var token = _tokenGenerator.GenerateToken(model);
             return Ok(token);
-
         }
 
         return Unauthorized();

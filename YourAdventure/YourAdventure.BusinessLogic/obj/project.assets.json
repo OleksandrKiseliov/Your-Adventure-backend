@@ -27,19 +27,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\sport\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\sport\\source\\repos\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
       "projectName": "YourAdventure.BusinessLogic",
-      "projectPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.BusinessLogic\\obj\\",
+      "projectPath": "C:\\Users\\sport\\source\\repos\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\YourAdventure.BusinessLogic.csproj",
+      "packagesPath": "C:\\Users\\sport\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sport\\Source\\Repos\\Your-Adventure-backend\\YourAdventure\\YourAdventure.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -47,14 +52,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
-              "projectPath": "D:\\test_yradv – копія\\YourAdventure\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj"
+            "C:\\Users\\sport\\source\\repos\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\sport\\source\\repos\\Your-Adventure-backend\\YourAdventure\\YourAdventure.DataAccess\\YourAdventure.DataAccess.csproj"
             }
           }
         }

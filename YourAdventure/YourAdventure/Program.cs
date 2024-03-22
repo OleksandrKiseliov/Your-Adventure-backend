@@ -5,10 +5,14 @@ using Microsoft.OpenApi.Models;
 using YourAdventure.BusinessLogic.Services;
 using YourAdventure.BusinessLogic.Services.Interfaces;
 
+using System.Reflection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //Jwt configuration starts here
-var tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<UserController.TokenOptions>();
+var tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<YourAdventure.TokenOptions>();
+
+
 var key = Encoding.ASCII.GetBytes(tokenOptions.Secret);
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -31,6 +35,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddScoped<ITokenGenerator, TokenGenerator>();
+builder.Services.AddScoped<IPersonGenerator, PersonGenerator>();
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo

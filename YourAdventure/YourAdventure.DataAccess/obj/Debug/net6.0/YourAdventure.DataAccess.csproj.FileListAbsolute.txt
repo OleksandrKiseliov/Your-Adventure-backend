@@ -57,3 +57,15 @@ D:\test_yradv\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdvent
 D:\test_yradv\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\refint\YourAdventure.DataAccess.dll
 D:\test_yradv\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.pdb
 D:\test_yradv\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\ref\YourAdventure.DataAccess.dll
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.deps.json
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.dll
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\bin\Debug\net6.0\YourAdventure.DataAccess.pdb
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.AssemblyInfoInputs.cache
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.AssemblyInfo.cs
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.sourcelink.json
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.dll
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\refint\YourAdventure.DataAccess.dll
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\YourAdventure.DataAccess.pdb
+C:\Users\sport\Source\Repos\Your-Adventure-backend\YourAdventure\YourAdventure.DataAccess\obj\Debug\net6.0\ref\YourAdventure.DataAccess.dll

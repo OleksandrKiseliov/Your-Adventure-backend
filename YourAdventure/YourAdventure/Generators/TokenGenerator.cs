@@ -17,7 +17,7 @@ public class TokenGenerator : ITokenGenerator
 
     public string GenerateToken(Person model)
     {
-        var tokenOptions = _configuration.GetSection("TokenOptions").Get<UserController.TokenOptions>();
+        var tokenOptions = _configuration.GetSection("TokenOptions").Get<YourAdventure.TokenOptions>();
 
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenOptions.Secret));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);

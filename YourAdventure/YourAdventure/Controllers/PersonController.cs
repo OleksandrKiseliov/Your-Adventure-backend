@@ -1,9 +1,6 @@
-﻿using Dapper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
-
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using YourAdventure.BusinessLogic.Services.Interfaces;
 
 namespace YourAdventure.Controllers
 {
@@ -11,54 +8,50 @@ namespace YourAdventure.Controllers
     [ApiController]
     public class PersonController : ControllerBase
     {
-        private readonly IConfiguration _config;
-        public PersonController(IConfiguration config)
+        private readonly IPersonGenerator _personGenerator;
+
+        public PersonController(IPersonGenerator personGenerator)
         {
-            _config = config;
+            _personGenerator = personGenerator;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Person>>> GetAllPersons()
         {
-            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
-            var persons = await connection.QueryAsync<Person>("select * from person");
+            var persons = await _personGenerator.GetAllPersons();
             return Ok(persons);
         }
 
         [HttpGet("{Email}")]
-        public async Task<Person> GetPerson(string Email)
+        public async Task<ActionResult<Person>> GetPerson(string Email)
         {
-            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
-            var person = await connection.QueryFirstAsync<Person>("select * from person where Email = @Email",
-                new { Email = Email });
-            return (person);
+            var person = await _personGenerator.GetPerson(Email);
+            if (person == null)
+            {
+                return NotFound();
+            }
+            return Ok(person);
         }
 
         [HttpPost]
         public async Task<ActionResult<Person>> NewPerson(Person person)
         {
-            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
-            await connection.ExecuteAsync("insert into Person (Nickname, Bday, Email, Profilepicture, Password)" +
-                " values (@Nickname, @Bday, @Email, @Profilepicture, @Password)", person);
-            return Ok(await GetAllPersons());
+            var newPerson = await _personGenerator.NewPerson(person);
+            return Ok(newPerson);
         }
 
         [HttpPut]
-        public async Task<ActionResult<List<Person>>> UpdatePerson(Person person)
+        public async Task<ActionResult<Person>> UpdatePerson(Person person)
         {
-            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
-            await connection.ExecuteAsync("update Person set Nickname = @Nickname, Bday = @Bday, Email = @Email, Profilepicture = @Profilepicture, Password = @Password where PersonId = @PersonId", person);
-            return Ok(person);
+            var updatedPerson = await _personGenerator.UpdatePerson(person);
+            return Ok(updatedPerson);
         }
 
         [HttpDelete("{PersonId}")]
         public async Task<ActionResult<List<Person>>> DeletePerson(int PersonId)
         {
-            using var connection = new SqlConnection(_config.GetConnectionString("DefaultConnection"));
-            await connection.ExecuteAsync("delete from Person where PersonId = @id", new { id = PersonId });
-            return Ok(await GetAllPersons());
+            await _personGenerator.DeletePerson(PersonId);
+            return NoContent();
         }
-
-
     }
 }
