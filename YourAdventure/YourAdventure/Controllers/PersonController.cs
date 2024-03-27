@@ -20,7 +20,7 @@ namespace YourAdventure.Controllers
         {
             var persons = await _personGenerator.GetAllPersons();
             return Ok(persons);
-        }
+        }   
 
         [HttpGet("{Email}")]
         public async Task<ActionResult<Person>> GetPerson(string Email)
